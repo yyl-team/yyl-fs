@@ -1,0 +1,28 @@
+{
+  "name": "yyl-fs",
+  "version": "0.1.0",
+  "description": "extFs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jackness1208/yyl-fs.git"
+  },
+  "keywords": [
+    "fs"
+  ],
+  "author": "jackness",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jackness1208/yyl-fs/issues"
+  },
+  "homepage": "https://github.com/jackness1208/yyl-fs#readme",
+  "devDependencies": {
+    "chai": "^4.1.2"
+  }
+}
