@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/jackness1208/yyl-fs#readme",
   "devDependencies": {
-    "chai": "^4.1.2"
+    "chai": "^4.1.2",
+    "yyl-util": "^1.14.3"
   }
 }

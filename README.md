@@ -3,7 +3,10 @@
 ## extFs.mkdirSync()
 ```
 /**
- * @param {String} toPath 需要创建文件夹的完整路径
+ * @param  {String} toPath      需要创建文件夹的完整路径
+ *
+ * @return {Promise} then(data)
+ * @param  {Array}   data       总共创建多少个 文件夹
  */
 extFs.mkdirSync(toPath);
 ```
@@ -46,7 +49,7 @@ extFs.copyFiles(map, filter)
  * @param {Boolean}         includeSelf 是否包含自身(对文件夹有效)
  * 
  * @return {Promsie}        then(list)
- * @param  {Array}          data       删除的文件列表
+ * @param  {Array}          list       删除的文件列表
  */
 extFs.removeFiles(iPath, filter, includeSelf)
 ```
@@ -58,7 +61,7 @@ extFs.removeFiles(iPath, filter, includeSelf)
  * @param {Boolean}         includeSelf 是否包含自身(对文件夹有效)
  * 
  * @return {Promsie}        then(list)
- * @param  {Array}          data       删除的文件列表
+ * @param  {Array}          list       删除的文件列表
  */
 extFs.removeFiles(files, filter, includeSelf)
 ```
@@ -70,7 +73,7 @@ extFs.removeFiles(files, filter, includeSelf)
  * @param {Function|Regex}  filter
  * 
  * @return {Promsie}        then(list)
- * @param  {Array}          data       删除的文件列表
+ * @param  {Array}          list      删除的文件列表
  */
 extFs.readFilePaths(iPath, filter)
 ```
@@ -79,9 +82,10 @@ extFs.readFilePaths(iPath, filter)
 /**
  * @param {Array}           files
  * @param {Function|Regex}  filter
+ * @param {Boolean}         reverse filter 结果取反
  * 
  * @return {Promsie}        then(list)
- * @param  {Array}          data       删除的文件列表
+ * @param  {Array}          list       删除的文件列表
  */
-extFs.readFilePaths(files, filter)
+extFs.readFilePaths(files, filter, reverse)
 ```
