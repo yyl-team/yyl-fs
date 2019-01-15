@@ -89,3 +89,20 @@ extFs.readFilePaths(iPath, filter)
  */
 extFs.readFilePaths(files, filter, reverse)
 ```
+
+### extFs.readFilesSync(iPath, filter);
+```
+/**
+ * 获取目录下所有文件路径
+ * @param  {String}          iPath                文件目录
+ * @param  {Function}        callback(err, files) 复制成功回调函数
+ *                           -err   [string]      错误信息
+ *                           -files [array]       复制成功的文件列表
+ * @param  {Regex|Function}  filter               文件过滤正则
+ *                           filter(filePath)     文件过滤函数 返回 true 则加入到返回列表
+ * @param  {String}          -filePath            文件目录
+ * @param  {Regex}           ignoreFilter         跳过搜索的目录 regex
+ * @return {Array}           files                文件列表
+ */
+extFs.readFilesSync(iPath, filter, reverse);
+```
