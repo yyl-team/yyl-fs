@@ -43,7 +43,8 @@ const TEST_CTRL = {
   MKDIR: true,
   REMOVE: true,
   COPY: true,
-  READ: true
+  READ: true,
+  READ_FILES_SYNC: true
 };
 
 if (TEST_CTRL.MKDIR) {
@@ -580,4 +581,8 @@ if (TEST_CTRL.READ) {
       }, done);
     });
   });
+}
+
+if (TEST_CTRL.READ_FILES_SYNC) {
+  // TODO
 }
