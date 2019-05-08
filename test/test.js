@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 const expect = require('chai').expect;
-const extFs = require('../index.js');
+const extFs = require('../lib/extFs.js');
 const util = require('yyl-util');
 
 const FRAG_PATH = path.join(__dirname, '__frag');
