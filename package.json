@@ -1,8 +1,8 @@
 {
   "name": "yyl-fs",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "extFs",
-  "main": "index.js",
+  "main": "lib/extFs.js",
   "directories": {
     "test": "test"
   },
