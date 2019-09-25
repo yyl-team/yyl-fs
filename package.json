@@ -1,6 +1,6 @@
 {
   "name": "yyl-fs",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "extFs",
   "main": "lib/extFs.js",
   "types": "lib/extFs.d.ts",
